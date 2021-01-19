@@ -7,6 +7,8 @@ import org.springframework.context.ConfigurableApplicationContext;
 @SpringBootApplication
 public class Application {
 	private Map<String,Object> cache=new HashMap<String,Object>();
+	public static final String REST_URL="http://www.equitax.com/getScores";
+  
 	public static void main(String[] args) {
 		ConfigurableApplicationContext run=SpringApplication.run(Application.class, args);
 		//changes for HIS-134
